@@ -2,15 +2,15 @@ import selfcore from "selfcore";
 
 const client = new selfcore();
 const gateway = new selfcore.Gateway(
-  "Mzg3MjYxNzI4NjI0MzQ1MDg5.Ym6xTg.XsgJHPl5V8Bbp3F7hQ_1tz2iQYQ"
+  "OTA4OTkzODYwNTg2MzE1Nzc2.GpqaSi._1yE3gqymMJgtUnymLWR7GNzSCoDiB5lm1FmVc"
 );
 
 gateway.on("message", (m) => {
-  if (m.channel_id === "931341731016867900") {
+  if (m.channel_id === "941753577758654485") {
     let content = m.content ? m.content : { embeds: [m.embeds[0]] };
 
     client.sendWebhook(
-      "https://discord.com/api/webhooks/1011248751979008071/uzAxemti9YpMb6nFhSOxZ0cTbz7nekvpgKEjQ0q_5HjzZU3MqoazA4qqAR4z3pqAECcU",
+      "https://discord.com/api/webhooks/1021779952883994624/g_ilP0pVrLwoPFJ-yv5wk9lqErfQbAwvc6yoqh_2CYE4f7FCDKjoVI7QkkfryhJmRK99",
       content
     );
   }
